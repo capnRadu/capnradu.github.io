@@ -1,0 +1,194 @@
+:root {
+    --header-image: url(Images/header2.png);
+    --body-bg-image: url(Images/wallpaper1.png);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Italic.ttf);
+    font-style: italic;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-size: auto;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 1306px;
+    /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment */
+    margin: 0 auto;
+}
+
+/* all links on page EXCEPT for the navigation */
+#container a {
+    color: #E560F0;
+    font-weight: bold;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    border: #FAF8FF 2px solid;
+    box-shadow: 0px 0px 3px 1px #FAF8FF;
+    background-image: var(--header-image);
+    background-position: top;
+}
+
+/* navigation section */
+#navbar {
+    height: 45px;
+    background-color: #0D0D0D;
+    background-image: url(Images/container.png);
+    margin-top: 10px;
+    border: #FAF8FF 2px solid;
+    box-shadow: 0px 0px 3px 1px #FAF8FF;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-size: 26px;
+}
+
+#navbar li {
+    padding-top: 0px;
+}
+
+/* navigation links */
+#navbar li a {
+    color: #E560F0;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 2px 2px 4px blue;
+    text-decoration: none;
+}
+
+/* navigation hovered link */
+#navbar li a:hover {
+    color: #FAF8FF;
+    text-decoration: none;
+}
+
+#contact li a:hover {
+    color: #FAF8FF;
+    text-decoration: none;
+}
+
+#flex {
+    display: flex;
+}
+
+/* main content area */
+main {
+    background-color: #0D0D0D;
+    background-image: url(Images/container.png);
+    border: #FAF8FF 2px solid;
+    box-shadow: 0px 0px 3px 1px #FAF8FF;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+footer {
+    background-image: var(--header-image);
+    background-position: center;
+    border: #FAF8FF 2px solid;
+    box-shadow: 0px 0px 3px 1px #FAF8FF;
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    color: #0D0D0D;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px 2px blue;
+}
+
+.showcase-layout {
+    margin-top: 0.5cm;
+    margin-bottom: 0.25cm;
+    text-align: center;
+}
+
+.showcase-content {
+    box-shadow: -1px 2px 3px 3px #000000;
+    border: 2px solid #FAF8FF;
+    margin: 10px;
+}
+
+h1 {
+    text-shadow: 3px 3px 5px blue;
+    color: #0D0D0D;
+    font-style: italic;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+h2 {
+    color: #FAF8FF;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    color: #FAF8FF;
+    font-size: 25px;
+}
+
+p1 {
+    color: #FAF8FF;
+    font-size: 18px;
+}
+
+    strong {
+        /* this styles bold text */
+        color: #ED64F5;
+    }
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of the page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media only screen and (max-width: 1206px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    /* the order of the items is adjusted here for responsiveness
+    since the sidebars would be too small on a mobile device */
+    main {
+        order: 1;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
