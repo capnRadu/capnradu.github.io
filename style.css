@@ -26,37 +26,33 @@ body {
 }
 
 #container {
-    max-width: 1306px;
-    /* if you change the above value, scroll to the bottom
-    and change the media query according to the comment */
+    max-width: 81.62em;
+    min-width: 40em;
     margin: 0 auto;
 }
 
-/* all links on page EXCEPT for the navigation */
 #container a {
     color: #E560F0;
     font-weight: bold;
 }
 
 #header {
-    width: 100%;
-    height: 150px;
-    margin-top: 10px;
+    height: 12.5em;
+    margin-top: 0.625em;
     border: #FAF8FF 2px solid;
     box-shadow: 0px 0px 3px 1px #FAF8FF;
     background-image: var(--header-image);
     background-position: top;
 }
 
-/* navigation section */
 #navbar {
-    height: 45px;
+    height: 2.81em;
     background-color: #0D0D0D;
     background-image: url(Images/container.png);
-    margin-top: 10px;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
     border: #FAF8FF 2px solid;
     box-shadow: 0px 0px 3px 1px #FAF8FF;
-    width: 100%;
 }
 
 #navbar ul {
@@ -65,23 +61,20 @@ body {
     margin: 0;
     list-style-type: none;
     justify-content: space-evenly;
-    font-size: 26px;
+    font-size: 1.62rem;
 }
 
 #navbar li {
-    padding-top: 0px;
+    padding-top: 0em;
 }
 
-/* navigation links */
 #navbar li a {
     color: #E560F0;
-    font-weight: 800;
     font-style: italic;
     text-shadow: 2px 2px 4px blue;
     text-decoration: none;
 }
 
-/* navigation hovered link */
 #navbar li a:hover {
     color: #FAF8FF;
     text-decoration: none;
@@ -96,84 +89,71 @@ body {
     display: flex;
 }
 
-/* main content area */
 main {
     background-color: #0D0D0D;
     background-image: url(Images/container.png);
     border: #FAF8FF 2px solid;
     box-shadow: 0px 0px 3px 1px #FAF8FF;
     flex: 1;
-    padding: 20px;
+    padding: 2em;
     order: 2;
 }
 
 footer {
     background-image: var(--header-image);
     background-position: center;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
     border: #FAF8FF 2px solid;
     box-shadow: 0px 0px 3px 1px #FAF8FF;
-    width: 100%;
-    height: 40px;
-    padding: 4px;
+    height: 2.5rem;
+    padding: 0.25rem;
     color: #0D0D0D;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: italic;
     text-align: center;
     text-shadow: 1px 1px 2px blue;
 }
 
 .showcase-layout {
-    margin-top: 0.5cm;
-    margin-bottom: 0.25cm;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     text-align: center;
 }
 
 .showcase-content {
     box-shadow: -1px 2px 3px 3px #000000;
     border: 2px solid #FAF8FF;
-    margin: 10px;
+    margin: 0.625em;
 }
 
 h1 {
+    font-size: 4em;
     text-shadow: 3px 3px 5px blue;
     color: #0D0D0D;
     font-style: italic;
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 6.25rem;
+    margin-left: 1.25rem;
 }
 
 h2 {
     color: #FAF8FF;
-    margin-top: 0px;
+    margin-top: 0rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.87rem;
 }
 
 h3 {
     color: #FAF8FF;
-    font-size: 25px;
+    font-size: 1.56rem;
 }
 
 p1 {
     color: #FAF8FF;
-    font-size: 18px;
+    font-size: 1.12rem;
 }
 
-    strong {
-        /* this styles bold text */
-        color: #ED64F5;
-    }
-
-/* BELOW THIS POINT IS MEDIA QUERY */
-
-/* so you wanna change the width of the page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
-*/
-
-@media only screen and (max-width: 1206px) {
+@media only screen and (max-width: 75.37em) {
     #flex {
         flex-wrap: wrap;
     }
@@ -182,8 +162,6 @@ and then subtrack it by 100. use this new number as the
         width: 100%;
     }
 
-    /* the order of the items is adjusted here for responsiveness
-    since the sidebars would be too small on a mobile device */
     main {
         order: 1;
     }
