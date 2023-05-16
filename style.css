@@ -6,12 +6,14 @@
 @font-face {
     font-family: Poppins;
     src: url(Fonts/Poppins-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Poppins;
     src: url(Fonts/Poppins-Italic.ttf);
     font-style: italic;
+    font-display: swap;
 }
 
 body {
@@ -122,6 +124,46 @@ footer {
 }
 
 .showcase-content {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: -1px 2px 3px 3px #000000;
+    border: 2px solid #FAF8FF;
+    margin: 0.625em;
+}
+
+.showcase-content-about {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    float: right;
+    box-shadow: -1px 2px 3px 3px #000000;
+    border: 2px solid #FAF8FF;
+    margin: 0.625em;
+}
+
+.showcase-content-2D {
+    width: 100%;
+    max-width: 543px;
+    height: auto;
+    box-shadow: -1px 2px 3px 3px #000000;
+    border: 2px solid #FAF8FF;
+    margin: 0.625em;
+}
+
+.showcase-content-page {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    box-shadow: -1px 2px 3px 3px #000000;
+    border: 2px solid #FAF8FF;
+    margin: 0.625em;
+}
+
+.showcase-content-donutpage {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     box-shadow: -1px 2px 3px 3px #000000;
     border: 2px solid #FAF8FF;
     margin: 0.625em;
