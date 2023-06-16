@@ -41,6 +41,7 @@ body {
 #header {
     height: 12.5em;
     margin-top: 0.625em;
+    margin-bottom: 0.625em;
     border: #FAF8FF 2px solid;
     box-shadow: 0px 0px 3px 1px #FAF8FF;
     background-image: var(--header-image);
@@ -89,6 +90,7 @@ body {
 
 #flex {
     display: flex;
+    margin-bottom: 0.625em;
 }
 
 main {
@@ -153,7 +155,7 @@ footer {
 
 .showcase-content-page {
     width: 100%;
-    max-width: 1000px;
+    max-width: 500px;
     height: auto;
     box-shadow: -1px 2px 3px 3px #000000;
     border: 2px solid #FAF8FF;
